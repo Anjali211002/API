@@ -1,0 +1,80 @@
+Certainly! Below is a document describing all the endpoints in your Flask application along with their functionalities:
+
+---
+
+# API Endpoints Documentation
+
+## Welcome Endpoint
+
+- **Endpoint:** `/`
+- **Method:** GET
+- **Description:** Welcome endpoint to test the API.
+- **Example:** `GET /`
+
+---
+
+## User Endpoints
+
+### List Users
+
+- **Endpoint:** `/users`
+- **Method:** GET
+- **Description:** Retrieve a list of all users.
+- **Parameters:**
+  - `username` (Optional): Filter users by username.
+- **Example:** `GET /users`
+
+### Replace User Fields
+
+- **Endpoint:** `/users/<int:user_id>`
+- **Method:** PUT
+- **Description:** Replace specified fields of a user.
+- **Parameters:**
+  - `user_id`: ID of the user to be updated.
+- **Example:** `PUT /users/1`
+
+---
+
+## Client Endpoints
+
+### Create Client
+
+- **Endpoint:** `/clients`
+- **Method:** POST
+- **Description:** Create a new client.
+- **Parameters:**
+  - `user_id`: ID of the associated user.
+  - `company_id`: ID of the associated company.
+  - `name`: Name of the client.
+  - `email`: Email of the client.
+  - `phone`: Phone number of the client.
+- **Example:** `POST /clients`
+
+### Change Client Field
+
+- **Endpoint:** `/clients/<int:client_id>`
+- **Method:** PATCH
+- **Description:** Change specified fields of a client.
+- **Parameters:**
+  - `client_id`: ID of the client to be updated.
+- **Example:** `PATCH /clients/1`
+
+
+
+## Company Endpoints
+
+_No specific endpoints have been defined for companies in the provided code._
+
+---
+
+## Error Handling
+
+- **Endpoint:** `/404`
+- **Method:** GET
+- **Description:** Returns a JSON response for a 404 error.
+- **Example:** `GET /404`
+
+---
+
+**Note:** Make sure to replace placeholder values such as `<int:user_id>` and `<int:client_id>` with actual values when making requests.
+
