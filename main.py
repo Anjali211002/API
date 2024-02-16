@@ -1,3 +1,4 @@
+#Executed the code in pycharm 
 from flask import Flask, request, jsonify
 from flask_sqlalchemy import SQLAlchemy
 
