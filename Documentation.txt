@@ -1,6 +1,3 @@
-Certainly! Below is a document describing all the endpoints in your Flask application along with their functionalities:
-
----
 
 # API Endpoints Documentation
 
